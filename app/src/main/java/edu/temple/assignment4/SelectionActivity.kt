@@ -2,6 +2,7 @@ package edu.temple.assignment4
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -10,9 +11,11 @@ class SelectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val gridManager = GridLayoutManager(this, 3)
+
         val recyclerview= findViewById<RecyclerView>(R.id.recyclerView)
         recyclerview.layoutManager=gridManager
         recyclerview.adapter= ImageAdapter(this, getPlayers())
+
     }
 
     private fun getPlayers() : Array<ImageObject> {

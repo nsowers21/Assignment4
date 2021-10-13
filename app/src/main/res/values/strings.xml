@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Assignment4</string>
+    <string name="click_to_view">Click and Image to View</string>
+    <string name="lebron">This is LeBron James</string>
+    <string name="ad">This is Anthony Davis</string>
+    <string name="allen">This is Allen Iverson</string>
+    <string name="dame">This is Damian Lillard</string>
+    <string name="harden">This is James Harden</string>
+    <string name="joel">This is Joel Embiid</string>
+    <string name="curry">This is Stephen Curry</string>
+    <string name="jordan">This is Michael Jordan</string>
+    <string name="durant">This is Kevin Durant</string>
+    <string name="kobe">This is Kobe Bryant</string>
+    <string name="shaq">This is Shaquille O'neal</string>
+    <string name="dwade">This is Dwayne Wade</string>
+
+    <string-array name="players">
+        <item>@string/lebron</item>
+        <item>@string/ad</item>
+        <item>@string/allen</item>
+        <item>@string/dame</item>
+        <item>@string/harden</item>
+        <item>@string/joel</item>
+        <item>@string/joel</item>
+        <item>@string/curry</item>
+        <item>@string/jordan</item>
+        <item>@string/durant</item>
+        <item>@string/kobe</item>
+        <item>@string/shaq</item>
+        <item>@string/dwade</item>
+    </string-array>
 </resources>
