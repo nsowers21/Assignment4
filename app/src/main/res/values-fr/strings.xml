@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App de Visualisation des Joueurs</string>
+    <string name="click_to_view">Cliquez sur une image pour voir</string>
+    <string name="lebron">Vous avez sélectionné LeBron James</string>
+    <string name="ad">Vous avez sélectionné Anthony Davis</string>
+    <string name="allen">Vous avez sélectionné Allen Iverson</string>
+    <string name="dame">Vous avez sélectionné Damian Lillard</string>
+    <string name="harden">Vous avez sélectionné James Harden</string>
+    <string name="joel">Vous avez sélectionné Joel Embiid</string>
+    <string name="curry">Vous avez sélectionné Stephen Curry</string>
+    <string name="jordan">Vous avez sélectionné Michael Jordan</string>
+    <string name="durant">Vous avez sélectionné Kevin Durant</string>
+    <string name="kobe">Vous avez sélectionné Kobe Bryant</string>
+    <string name="shaq">Vous avez sélectionné Shaquille O\'neal</string>
+    <string name="dwade">Vous avez sélectionné Dwayne Wade</string>
+</resources>
+
+

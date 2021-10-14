@@ -11,7 +11,6 @@ class SelectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val gridManager = GridLayoutManager(this, 3)
-
         val recyclerview= findViewById<RecyclerView>(R.id.recyclerView)
         recyclerview.layoutManager=gridManager
         recyclerview.adapter= ImageAdapter(this, getPlayers())
@@ -19,18 +18,20 @@ class SelectionActivity : AppCompatActivity() {
     }
 
     private fun getPlayers() : Array<ImageObject> {
-        val imageObjectList = arrayOf(ImageObject("Lebron James", R.drawable.lebron)
-            ,ImageObject("Anthony Davis",R.drawable.ad)
-            ,ImageObject("Allen Iverson", R.drawable.ai)
-            ,ImageObject("Damian Lillard", R.drawable.dame)
-            ,ImageObject("James Harden", R.drawable.harden)
-            ,ImageObject("Joel Embiid", R.drawable.joel)
-            ,ImageObject("Stephen Curry", R.drawable.steph)
-            ,ImageObject("Michael Jordan", R.drawable.jordan)
-            ,ImageObject("Kevin Durant", R.drawable.kd)
-            ,ImageObject("Kobe Bryant", R.drawable.kobe)
-            ,ImageObject("Shaquille O'neal", R.drawable.shaq)
-            ,ImageObject("Dwayne Wade", R.drawable.wade));
+        val playerArray = this.resources.getStringArray(R.array.players)
+        val iterator = playerArray.iterator()
+        val imageObjectList = arrayOf(ImageObject(iterator.next(), R.drawable.lebron)
+            ,ImageObject(iterator.next(),R.drawable.ad)
+            ,ImageObject(iterator.next(), R.drawable.ai)
+            ,ImageObject(iterator.next(), R.drawable.dame)
+            ,ImageObject(iterator.next(), R.drawable.harden)
+            ,ImageObject(iterator.next(), R.drawable.joel)
+            ,ImageObject(iterator.next(), R.drawable.steph)
+            ,ImageObject(iterator.next(), R.drawable.jordan)
+            ,ImageObject(iterator.next(), R.drawable.kd)
+            ,ImageObject(iterator.next(), R.drawable.kobe)
+            ,ImageObject(iterator.next(), R.drawable.shaq)
+            ,ImageObject(iterator.next(), R.drawable.wade));
         return imageObjectList
     }
 }

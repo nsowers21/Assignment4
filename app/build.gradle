@@ -8,10 +8,12 @@ android {
 
     defaultConfig {
         applicationId "edu.temple.assignment4"
-        minSdk 30
+        minSdk 22
         targetSdk 31
         versionCode 1
         versionName "1.0"
+        resConfigs("en", "es","fr")
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

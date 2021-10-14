@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="players">
+        <item>@string/lebron</item>
+        <item>@string/ad</item>
+        <item>@string/allen</item>
+        <item>@string/dame</item>
+        <item>@string/harden</item>
+        <item>@string/joel</item>
+        <item>@string/curry</item>
+        <item>@string/jordan</item>
+        <item>@string/durant</item>
+        <item>@string/kobe</item>
+        <item>@string/shaq</item>
+        <item>@string/dwade</item>
+    </string-array>
+</resources>
