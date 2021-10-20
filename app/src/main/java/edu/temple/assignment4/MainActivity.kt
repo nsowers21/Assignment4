@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class SelectionActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,4 +34,19 @@ class SelectionActivity : AppCompatActivity() {
             ,ImageObject(iterator.next(), R.drawable.wade));
         return imageObjectList
     }
+
+    //code from the DisplayActivity
+    /*
+    class DisplayActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.display_activity)
+        val name = findViewById<TextView>(R.id.playerName)
+        val image = findViewById<ImageView>(R.id.playerPicture)
+        name.text = intent.getStringExtra("DisplayText").toString()
+        image.setImageResource(intent.getIntExtra("DisplayImage",1))
+    }
+}
+     */
 }

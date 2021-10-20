@@ -13,4 +13,6 @@
     <string name="kobe">You Selected Kobe Bryant</string>
     <string name="shaq">You Selected Shaquille O\'neal</string>
     <string name="dwade">You Selected Dwayne Wade</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -5,13 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.*
 
 
-class ImageAdapter(private val activity: SelectionActivity, var players: Array<ImageObject>): RecyclerView.Adapter<ImageAdapter.Viewholder>() {
+class ImageAdapter(private val activity: MainActivity, var players: Array<ImageObject>): RecyclerView.Adapter<ImageAdapter.Viewholder>() {
     class Viewholder(itemView: View): ViewHolder(itemView){
         var imageView: ImageView = itemView.findViewById(R.id.playerPic)
 
