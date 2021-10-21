@@ -2,11 +2,12 @@ package edu.temple.assignment4
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
+    lateinit var ViewModelPlayers: ViewModelPlayers
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -14,6 +15,12 @@ class MainActivity : AppCompatActivity() {
         val recyclerview= findViewById<RecyclerView>(R.id.recyclerView)
         recyclerview.layoutManager=gridManager
         recyclerview.adapter= ImageAdapter(this, getPlayers())
+
+        ViewModelPlayers = ViewModelProvider(this).get(ViewModelPlayers::class.java)
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentselect, SelectionFragment.newInstance(getPlayers()))
+            .commit()
+
 
     }
 

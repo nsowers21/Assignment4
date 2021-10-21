@@ -26,10 +26,10 @@ class ImageAdapter(private val activity: MainActivity, var players: Array<ImageO
         holder.imageView.setImageResource(players[position].imageId)
 
         holder.itemView.setOnClickListener{
-          val launchIntent = Intent(activity, DisplayActivity::class.java)
-              .putExtra("DisplayText",players[position].text)
-              .putExtra("DisplayImage",players[position].imageId)
-            startActivity(activity, launchIntent, null)
+          //val launchIntent = Intent(activity, DisplayActivity::class.java)
+              //.putExtra("DisplayText",players[position].text)
+              //.putExtra("DisplayImage",players[position].imageId)
+           // startActivity(activity, launchIntent, null)
         }
     }
 
